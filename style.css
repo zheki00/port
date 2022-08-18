@@ -57,6 +57,15 @@
     height: 684px;
     left: 698px;
     top: 91px;
+    animation: nur1Key 2s linear infinite;
+}
+@keyframes nur1Key {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 
 }
 .foto{
@@ -67,11 +76,31 @@
     top: 206px;
 
 }
+.border5{
+    position: absolute;
+    width: 70px;
+    height: 19px;
+    margin: 0 950px 0 950px;
+    left: 1930px;
+    top: 216px;
+
+    background: rgba(0, 0, 187, 0.8);
+    filter: blur(13px);
+    border-radius: 9px;
+    animation: border5Key 199ms ease-in-out infinite alternate;
+}
+@keyframes border5Key {
+
+    from {left: 0;}
+    to {left: 120px;background-color:red;}
+
+}
 .btn{
     position: absolute;
-    width: 233px;
+    width: 200px;
     height: 63px;
-    color: aliceblue;
+    z-index: 2;
+
     left: 135px;
     top: 490px;
     border-radius: 10%;
@@ -112,7 +141,7 @@
     height: 1281px;
     left: 86px;
     top: 1072px;
-
+     z-index: -1;
     opacity: 0.48;
 }
 .pont1{
@@ -152,6 +181,7 @@ padding: 0 150px 0 150px;
     padding: 750px 700px 750px 700px;
     width: 574px;
     height: 353px;
+
 }
 .pont6{
     display: flex;
@@ -183,7 +213,7 @@ padding: 0 150px 0 150px;
     font-weight: 700;
     font-size: 35px;
     line-height: 43px;
-
+    text-decoration: none;
 
     color: #00A1B4;
 }
@@ -217,9 +247,10 @@ padding: 0 150px 0 150px;
 }
 .btn1{
     display: flex;
-    align-items: center;
+    align-items:center;
 
-
+    margin: 40px;
+    text-decoration: none;
 
 }
 .nom{
@@ -232,15 +263,14 @@ padding: 0 150px 0 150px;
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
-
+    text-decoration: none;
     color: #00A1B4;
 
 }
 .nomer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+
 }
 .adress{
     width: 173px;
@@ -262,11 +292,137 @@ padding: 0 150px 0 150px;
 .adress1{
     display: flex;
     align-items: center;
-    justify-content: center;
+
 }
 .tel{
     width: 30px;
     height: 30px;
 }
+.h3{
 
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: 24px;
+    text-decoration: none;
+    color: #00A1B4;
+}
+.hh3{
+    display: flex;
+    width: 333px;
+    height: 48px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #00A1B4;
+}
+.btn01{
+    width: 200px;
+    height: 70px;
+    margin: 0 100px 0 100px;
+
+    background: #F0F0F0;
+    box-shadow: -1px 10px 10px rgba(87, 101, 228, 0.25), inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 3px 4px 10px #FFFFFF;
+    border-radius: 15px;
+}
+.tel2{
+   display: flex;
+    width: 89px;
+    height: 29px;
+    margin: 10px 50px 10px 50px ;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+
+    color: #16AEC0;
+}
+#footer{
+    width: 1440px;
+    height: 200px;
+   margin: -200px 0 200px 0;
+
+    background: #00A1B4;
+}
+.footerfoto{
+
+    width: 65px;
+    height: 63px;
+
+}
+.fuh3{
+    width: 159px;
+    height: 39px;
+    left: 213px;
+    top: 3379px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+
+
+    color: #FFFFFF;
+}
+.fuut{
+    display:flex;
+    align-items: center;
+}
+.tto{
+    width: 159px;
+    height: 39px;
+    left: 213px;
+    top: 3379px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    color: #0000BB;
+}
+.telfoot{
+    width: 261px;
+    height: 37px;
+    left: 1044px;
+    top: 3378px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+  text-decoration: none;
+
+    color: #FFFFFF;
+}
+.fotext{
+    width: 293px;
+    height: 111px;
+    left: 573px;
+    top: 3341px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.footadd{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
